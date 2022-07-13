@@ -1,7 +1,5 @@
-import Usuario from "./Usuario";
-import Publicacao from "./Publicacao";
+// import Usuario from "./Usuario";
 
 (async () => {
-  await Usuario.sync({ force: true });
-  await Publicacao.sync({ force: true });
+  // await Usuario.sync({ force: true });
 })()

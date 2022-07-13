@@ -1,10 +1,12 @@
 import { Sequelize } from "sequelize";
+import 'dotenv/config';
+
 export const sequelize = new Sequelize(
-    'crs-api-sequelize', 
-    'postgres',
-    'unochapeco', 
+    process.env.POSTGRES_DB,
+    process.env.POSTGRES_USERNAME,
+    process.env.POSTGRES_PASSWORD,
     {
-        host: 'localhost',
+        host: process.env.POSTGRES_HOST,
         dialect: 'postgres'
     }
 );
