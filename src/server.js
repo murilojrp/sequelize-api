@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 routes(app);
 app.use((req, res) => {
-  res.status(404).send('Página não encontrada')
+  res.status(404).send('404 - Página não encontrada')
 });
 
 app.listen(3024, () => {
